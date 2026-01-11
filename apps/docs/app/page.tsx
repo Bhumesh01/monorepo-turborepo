@@ -32,6 +32,7 @@ export default function Home() {
           priority
         />
         <ol>
+          <li>Hi</li>
           <li>
             Get started by editing <code>apps/docs/app/page.tsx</code>
           </li>

@@ -1,18 +1,22 @@
-"use client";
-
-import { ReactNode } from "react";
-
+"use client"
+import { ReactNode, useState } from "react";
+import {useRouter} from "next/navigation"
 interface ButtonProps {
   children: ReactNode;
-  className?: string;
-  appName: string;
+  hover?: string,
+  style?: React.CSSProperties;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button = ({ children, style, hover }: ButtonProps) => {
+  const router = useRouter();
+  const [isHover, setIsHover] = useState<Boolean>(false);
+
   return (
     <button
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
+    onClick={()=>{router.push("/chat/123")}}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      style={{...style, backgroundColor: isHover&&hover?hover: style?.backgroundColor}}
     >
       {children}
     </button>

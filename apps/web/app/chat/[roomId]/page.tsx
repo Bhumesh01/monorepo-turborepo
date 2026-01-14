@@ -16,8 +16,8 @@ export default function Chat(){
                     <ChatBubble></ChatBubble>
                 </div>
                 <div style={{marginBottom: "5px", display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", gap: "5px"}}>
-                    <TextInput placeholder="Enter your message:  " style={{width: "94%",padding: "9px", borderRadius: "5px", backgroundColor: "#010108", fontSize: "18px", border: "1px solid #494949"}}></TextInput>
-                    <Button hover="#161422" style={{backgroundColor: "transparent", border: "none", fontSize: "clamp(18px, 3vw, 32px)", padding: "5px", width: "6%", borderRadius: "50px", color: "white", marginRight: "2px"}}>➤</Button>
+                    <TextInput placeholder="Enter your message:  " style={{width: "94%",padding: "9px", borderRadius: "5px", backgroundColor: "#010108", fontSize: "18px", border: "1px solid #494949", color: "white"}}></TextInput>
+                    <Button hover="#202022" style={{backgroundColor: "transparent", border: "none", fontSize: "clamp(18px, 3vw, 32px)", padding: "5px 10px", width: "fit-content", borderRadius: "50px", color: "white", marginRight: "2px"}}>➤</Button>
                 </div>
             </div>
         </div>
